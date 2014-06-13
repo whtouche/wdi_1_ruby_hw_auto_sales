@@ -2,7 +2,7 @@ require_relative 'car'
 require_relative 'damage'
 class UsedCar < Car
   attr_reader
-  attr_accessor
+  attr_accessor :damage
 
   def initialize(make, model, year, msrp, mileage)
     super

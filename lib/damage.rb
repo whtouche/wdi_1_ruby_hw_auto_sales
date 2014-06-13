@@ -6,7 +6,11 @@ class Damage
   def initialize
   end
 
-  def scuffed_p
+  def scratch
+  end
+
+  def dent
+  end
 
 end
 
