@@ -15,21 +15,27 @@ In this assignment we'll be writing a collection of Ruby classes for a "car lot"
 Think carefully about the order you'll want to build these in. For instance, it might make sense to leave `CarLot` for last, since it needs cars to function.
 
 ### `CarLot`
+#B Do last
 * has a name
 * may have one or more cars
 * can retrieve the "lot value" (total price of all cars on the lot)
 * can retrieve a list of all cars matching a certain make, model, or year
 
 ### `Car`
+#B-Do first, is overclass!
 * has a make, model, and year of manufacture
+#B-Shelly = Car.new('Ford', 'Fiesta', 1984, 5000)
 * has an MSRP (original retail price)
+#B-Above
 * has a value (MSRP modified by depreciation, taking the year of manufacture into account)
+#B-Function w/in class Car. Use date calculation from person.rb, require 'date'
 * all cars have a constant depreciation of 5% per year
 * has a manager markup
 * has a price (value modified by the manager markup)
 
 ### `UsedCar`
 * has the same attributes as a new car
+#B-Subclass of class Car
 * has a mileage
 * may have one or more damages (scuffed paint, missing hubcaps, etc.)
 * has a value (same calculation as a new car, modified by mileage depreciation and the cost of all current damages)
